@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LocalBusiness JSON-LD Schema Generator</title>
+  <meta name="description" content="Free, offline generator for LocalBusiness JSON-LD structured data. Fill the form, copy the schema into your site's &lt;head&gt;.">
+  <style>
+    :root { --ink:#1b2733; --line:#dde3ea; --brand:#0b6; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, Arial, sans-serif; color: var(--ink);
+           max-width: 760px; margin: 0 auto; padding: 24px; line-height: 1.5; }
+    h1 { font-size: 1.5rem; }
+    label { display: block; font-weight: 600; margin: 14px 0 4px; }
+    input, textarea { width: 100%; padding: 9px 11px; border: 1px solid var(--line);
+                      border-radius: 8px; font: inherit; }
+    button { margin-top: 18px; padding: 11px 18px; border: 0; border-radius: 8px;
+             background: var(--brand); color: #fff; font-weight: 700; cursor: pointer; }
+    pre { background: #0d1117; color: #c9d1d9; padding: 16px; border-radius: 10px;
+          overflow: auto; margin-top: 18px; white-space: pre-wrap; word-break: break-word; }
+    footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line);
+             font-size: 0.9rem; color: #556; }
+    footer a { color: var(--brand); }
+  </style>
+</head>
+<body>
+  <h1>LocalBusiness JSON-LD Schema Generator</h1>
+  <p>Fill in your business details, generate the JSON-LD, and paste it inside the
+     <code>&lt;head&gt;</code> of your website. Everything runs in your browser -
+     nothing is sent anywhere.</p>
+
+  <label for="name">Business name</label>
+  <input id="name" placeholder="Acme Plumbing Ltd">
+
+  <label for="url">Website URL</label>
+  <input id="url" placeholder="https://www.example.co.uk">
+
+  <label for="phone">Phone</label>
+  <input id="phone" placeholder="+44 161 000 0000">
+
+  <label for="street">Street address</label>
+  <input id="street" placeholder="12 High Street">
+
+  <label for="locality">Town / city</label>
+  <input id="locality" placeholder="Manchester">
+
+  <label for="region">County / region</label>
+  <input id="region" placeholder="Greater Manchester">
+
+  <label for="postcode">Postcode</label>
+  <input id="postcode" placeholder="M1 1AA">
+
+  <label for="country">Country code</label>
+  <input id="country" value="GB">
+
+  <label for="hours">Opening hours (one per line, e.g. Mo-Fr 09:00-17:00)</label>
+  <textarea id="hours" rows="3" placeholder="Mo-Fr 09:00-17:00&#10;Sa 10:00-14:00"></textarea>
+
+  <button id="gen" type="button">Generate JSON-LD</button>
+
+  <pre id="out" aria-live="polite">Your schema will appear here.</pre>
+
+  <footer>
+    Built by <a href="https://www.digisurfagency.com" rel="noopener">DigiSurf Agency</a>
+    - websites and local SEO for UK small businesses.
+  </footer>
+
+  <script src="schema.js"></script>
+</body>
+</html>
