@@ -30,3 +30,5 @@ MIT. Use it, fork it, ship it.
 
 Built by [DigiSurf Agency](https://www.digisurfagency.com) - websites and local
 SEO for UK small businesses.
+
+_Last reviewed: 2026-07-02_
